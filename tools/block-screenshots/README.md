@@ -19,14 +19,14 @@ cd tools/block-screenshots
 With Docker (nothing else to install):
 
 ```sh
-docker run --rm -v "$PWD:/work" -w /work mcr.microsoft.com/playwright:v1.49.1-jammy \
-	sh -c "npm install && node capture.mjs examples/post-comments-form.json"
+docker run --rm -v "$PWD:/work" -w /work mcr.microsoft.com/playwright:v1.64.1-noble \
+	sh -c "npm ci && node capture.mjs examples/post-comments-form.json"
 ```
 
 Or with Node.js 20+:
 
 ```sh
-npm install
+npm ci
 npx playwright install chromium
 node capture.mjs examples/post-comments-form.json
 ```
