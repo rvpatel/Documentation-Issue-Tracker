@@ -10,6 +10,12 @@ Each run:
 
 ## Run it
 
+Run the commands from this folder, since the container mounts the current directory:
+
+```sh
+cd tools/block-screenshots
+```
+
 With Docker (nothing else to install):
 
 ```sh
